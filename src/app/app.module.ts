@@ -5,11 +5,14 @@ import { HttpModule } from '@angular/http';
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
-//import {ToolbarComponent} from './shared/toolbar/toolbar.component';
+
+import { MovieService } from './movies/shared/_index';
+import { MovieListComponent } from './movies/movie-list/movie-list.component';
+import { MovieCardComponent } from './movies/movie-card/movie-card.component';
 
 @NgModule({
   declarations: [ // Componentes, Directivas y Pipes que se usen en el modulo
-    AppComponent
+    AppComponent, MovieListComponent, MovieCardComponent
   ],
   imports: [ // Importamos Componentes, Directivas, Servicios y Pipes de otros modulos
     BrowserModule,
@@ -17,7 +20,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     SharedModule
   ],
-  providers: [], // Creamos una instancia unica de Servicios
+  providers: [MovieService], // Creamos una instancia unica de Servicios
   bootstrap: [AppComponent] // El componente inicial
 })
 export class AppModule { }
