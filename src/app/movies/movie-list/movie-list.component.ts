@@ -14,4 +14,8 @@ export class MovieListComponent {
         this.data = service.movies;
     }
 
+    itemSelected(movie: Movie) {
+        alert(movie.nombre);
+    }
+
 }

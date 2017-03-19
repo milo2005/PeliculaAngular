@@ -1,2 +1,2 @@
 <app-toolbar [title]="titleList"></app-toolbar>
-<app-movie-card *ngFor="let m of data" [movie]="m"></app-movie-card>
+<app-movie-card *ngFor="let m of data" [movie]="m" (selected)="itemSelected($event)"></app-movie-card>

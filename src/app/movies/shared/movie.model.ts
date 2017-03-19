@@ -1,6 +1,6 @@
 export class Movie {
     nombre: string;
-    duracion: number;
+    duracion?: number;
     fecha: Date;
     image: string;
 }

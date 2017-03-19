@@ -14,7 +14,7 @@ export class MovieService {
             , image: 'http://www.sopitas.com/wp-content/uploads/2016/10/logan-1.jpg'
         });
         this.movies.push({
-            nombre: 'Skull Island', duracion: 90, fecha: new Date()
+            nombre: 'Skull Island', fecha: new Date()
             , image: 'http://i.imgur.com/NE2HmPW.jpg'
         });
         this.movies.push({

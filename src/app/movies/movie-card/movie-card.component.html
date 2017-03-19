@@ -1,8 +1,8 @@
-<div class="card">
+<div class="card" (click)="movieClick()">
     <img src="{{movie.image}}">
     <div class="content">
         <h3>{{movie.nombre}}</h3>
-        <p>{{movie.duracion}}</p>
-        <p>{{movie.fechSa | date:'yMd'}}</p>
+        <p *ngIf="movie.duracion">{{movie.duracion | duracion}}</p>
+        <p>{{movie.fecha | date:'yMd'}}</p>
     </div>
 </div>
